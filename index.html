@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game | Yasin Aldasuqi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Quiz Game</h1>
+            <p class="subtitle">Test your knowledge!</p>
+        </header>
+
+        <div id="start-screen" class="screen active">
+            <h2>Welcome!</h2>
+            <p>10 questions • Multiple choice</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="progress">
+                <span id="question-counter">Question 1/10</span>
+                <span id="score-display">Score: 0</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <h2 id="question-text">Question goes here</h2>
+            <div id="answers-container" class="answers"></div>
+            <button id="next-btn" class="btn" style="display: none;">Next Question</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h2>🎉 Quiz Complete!</h2>
+            <p class="final-score">Your Score: <span id="final-score">0</span>/10</p>
+            <p id="result-message"></p>
+            <button id="restart-btn" class="btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
